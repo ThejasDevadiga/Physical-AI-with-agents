@@ -2,8 +2,8 @@ name: Daily Commit
 
 on:
   schedule:
-    - cron: "46 23 * * *"  # Keep or change as needed
-  workflow_dispatch:        # Add for manual testing
+    - cron: "20 18 * * *"  # 18:20 UTC = 23:50 IST
+
 
 permissions:               # Add for Git operations
   contents: write
