@@ -2,7 +2,7 @@ name: Daily Commit
 on:
   workflow_dispatch:  # Manual trigger only (test this first)
   schedule:
-    - cron: "42 19 * * *"  # 1:12 AM IST daily (19:42 UTC)
+    - cron: "0-59 19 * * *"  # 1:00-1:59 AM IST (guaranteed to run)
 
 permissions:
   contents: write
