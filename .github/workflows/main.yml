@@ -42,7 +42,7 @@ jobs:
       - name: Schedule Next Run (+60min)
         if: success()  # Only if previous steps succeeded
         run: |
-          sleep 3600
+          sleep 21600
           curl -X POST \
             -H "Authorization: token ${{ secrets.SELF_TRIGGER_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
